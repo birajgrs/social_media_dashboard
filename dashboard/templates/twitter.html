@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Dashboard</title>
+</head>
+<body>
+    <h1>Twitter Dashboard</h1>
+    <div class="tweet-list">
+        {% if tweets %}
+            <ul>
+            {% for tweet in tweets %}
+                <li class="tweet">
+                    <p>{{ tweet.text }}</p>
+                    <p>Posted by: {{ tweet.user }}</p>
+                    <p>Posted at: {{ tweet.created_at }}</p>
+                </li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No tweets available.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Dashboard</title>
+</head>
+<body>
+    <h1>Facebook Dashboard</h1>
+    <div class="post-list">
+        {% for post in posts %}
+        <div class="post">
+            <p>{{ post.message }}</p>
+            <p>Posted by User ID: {{ post.user_id }}</p>
+            <p>Posted at: {{ post.created_time }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
