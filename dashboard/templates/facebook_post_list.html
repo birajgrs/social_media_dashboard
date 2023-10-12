@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Facebook Data</title>
+    <title>Facebook Post List</title>
 </head>
 <body>
-    <h1>Facebook Data</h1>
+    <h1>List of Facebook Posts</h1>
     <ul>
-        {% for post in posts %}
+        {% for post in facebook_posts %}
             <li>{{ post.user_id }}: {{ post.message }}</li>
         {% endfor %}
     </ul>

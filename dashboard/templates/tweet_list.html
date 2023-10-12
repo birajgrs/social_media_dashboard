@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Twitter Data</title>
+    <title>Tweet List</title>
 </head>
 <body>
-    <h1>Twitter Data</h1>
+    <h1>List of Tweets</h1>
     <ul>
         {% for tweet in tweets %}
             <li>{{ tweet.user }}: {{ tweet.text }}</li>
